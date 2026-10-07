@@ -1,3 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Interactive Objects</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f5f5;
+            color: #222;
+        }
+
+        header {
+            background: #222;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0 0 10px 0;
+            font-size: 32px;
+        }
+
+        header p {
+            margin: 0;
+            color: #ccc;
+            font-size: 16px;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        #projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+        }
+
+        .project {
+            display: block;
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            text-decoration: none;
+            color: #222;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.15);
+        }
+
+        .project h2 {
+            margin: 0 0 10px 0;
+            font-size: 20px;
+        }
+
+        .project p {
+            margin: 0;
+            color: #777;
+            font-size: 14px;
+        }
+
+        .loading {
+            text-align: center;
+            color: #777;
+        }
+
+        .error {
+            background: #fff0f0;
+            color: #a00;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #888;
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Interactive Objects</h1>
+    <p>Interactive models created with SolidWorks Visualize</p>
+</header>
+
+<main>
+    <div id="projects">
+        <div class="loading">Loading interactive objects...</div>
+    </div>
+</main>
+
+<footer>
+    Frédéric Girard
+</footer>
+
 <script>
     const owner = "girardf";
     const repo = "Interactive";
@@ -62,3 +178,6 @@
                 </div>`;
         });
 </script>
+    
+</body>
+</html>
