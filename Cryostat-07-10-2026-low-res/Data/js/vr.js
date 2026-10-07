@@ -77,7 +77,7 @@ AC.VR.options = {
 
 	intro: AC.VR.SpinIntro,     // (function) function that returns the intro sequence (array of position arrays)
 	introSpins: 0.5,            // (number)   times the VR rotates 360 degrees in the intro
-	introDuration: 1,           // (number)   intro duration in seconds
+	introDuration: 2,           // (number)   intro duration in seconds
 
 	mobileTotalFrames: null     // (mixed)    total frames to show on a mobile device (number or array)
 };
